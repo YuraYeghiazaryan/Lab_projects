@@ -17,3 +17,8 @@ while run:
         if event.type == pg.QUIT:
             pg.quit()
             run = False
+
+        if event.type == pg.MOUSEBUTTONDOWN:
+            chessboard.btn_down(event.button, event.pos)
+        if event.type == pg.MOUSEBUTTONUP:
+            chessboard.btn_up(event.button, event.pos)
